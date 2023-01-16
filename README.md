@@ -1,6 +1,5 @@
 Meu primeiro repositório Git!!!! VQV Trybe.
 
-"As coisas que não levam a nada têm grande importância" 
+"As coisas que não levam a nada têm grande importância"\r\n 
                                       Manoel de Barros
 
-Escapar de uma viúva negra é um milagre tão grande quanto a própria arte.
