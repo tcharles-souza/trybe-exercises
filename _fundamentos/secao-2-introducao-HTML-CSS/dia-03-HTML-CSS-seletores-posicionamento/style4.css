@@ -65,37 +65,3 @@ div:hover{
 .primary-color, .complementary-color, .clear-color{
     font-style: italic;
 }
-/* .primary-color:hover{
-    background-color: red;
-    border: 3px solid black;
-    border-radius: 20px;
-}
-
-.secondary-color:hover{
-    background-color: purple;
-    width: 200px;
-    height: 50px;
-    border: 5px solid black;
-}
-
-.complementary-color:hover{
-    background-color: orange;
-    width: 200px;
-    height: 50px;
-    border: 5px solid black;
-}
-
-.dark-color:hover {
-    background-color: black;
-    color: white;
-    width: 200px;
-    height: 50px;
-    border: 5px solid orange;
-}
-
-.clear-color:hover {
-    background-color: aquamarine;
-    width: 200px;
-    height: 50px;
-    border: 2px solid black;
-} */
