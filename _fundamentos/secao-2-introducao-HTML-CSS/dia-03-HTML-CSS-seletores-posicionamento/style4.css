@@ -1,0 +1,43 @@
+*{
+    margin: -2px;
+}
+.primary-color:hover{
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    border: 5px solid black;
+}
+
+.secondary-color:hover{
+    background-color: purple;
+    width: 200px;
+    height: 50px;
+    border: 5px solid black;
+}
+
+.complementary-color:hover{
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    border: 5px solid black;
+}
+
+.dark-color:hover {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: 5px solid orange;
+}
+
+.clear-color:hover {
+    background-color: aquamarine;
+    width: 200px;
+    height: 50px;
+    border: 5px solid black;
+}
+
+h3{
+    width: 200px;
+    height: 50px;
+}
