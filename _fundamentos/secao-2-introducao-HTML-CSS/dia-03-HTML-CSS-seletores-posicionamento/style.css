@@ -1,8 +1,10 @@
 .caixa {
     color: white;
-   line-height: 50px;
+    display: inline-block;
+    line-height: 50px;
     text-align: center;
     vertical-align: top;
+    margin:-2px;
    
   }
   
