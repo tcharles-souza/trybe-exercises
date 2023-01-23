@@ -102,4 +102,24 @@ switch (modifiedName) {
 
     default:
         console.log('Peça inválida')
-}
+};
+
+// Utilize if/else para escrever um código que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.
+
+let porcentagemNota = 1000;
+
+if (porcentagemNota < 0 || porcentagemNota > 100){
+    console.log('NOTA INVÁLIDA');
+} else if (porcentagemNota >= 90){
+    console.log("NOTA A");
+} else if (porcentagemNota >= 80){
+    console.log('NOTA B');
+} else if (porcentagemNota >= 70){
+    console.log('NOTA C')
+} else if (porcentagemNota >= 60){
+    console.log('NOTA D');
+} else if (porcentagemNota >= 50){
+    console.log('NOTA E')
+} else {
+    console.log('NOTA F')
+};
