@@ -45,11 +45,12 @@ console.log(`Lucro total R$ ${profit.toFixed(2)}`)
 
 // Utilize if/else para escrever um código que, dado um salário bruto, calcule o líquido a ser recebido.
 
-let salarioBruto = 3000;
+let salarioBruto = 4500;
 let aliquotaINSS;
 let salarioBase;
 let parcelaIR;
 let aliquotaIR;
+let descontoIR;
 let salarioLiquido;
 
 if (salarioBruto < 1556.94) {
@@ -64,30 +65,31 @@ if (salarioBruto < 1556.94) {
 } else {
     aliquotaINSS = 570.88;
     salarioBase = salarioBruto - aliquotaINSS;
-}
+};
 
 // Cálculo do Imposto de Renda
 
-if (salarioBase < 1903, 99) {
-    salarioLiquido = salarioBase;
+if (salarioBase < 1903.99) {
+    descontoIR = salarioBase;
 } else if (salarioBase < 2826.66) {
-    aliquotaIR = 0, 075
+    aliquotaIR = 0.075
     parcelaIR = 142.80
-    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+    descontoIR = (aliquotaIR * salarioBase) - parcelaIR;
 } else if (salarioBase < 3751.06) {
-    aliquotaIR = 0, 15
+    aliquotaIR = 0.15
     parcelaIR = 345.80
-    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+    descontoIR = (aliquotaIR * salarioBase) - parcelaIR;
 } else if (salarioBase < 4664.69) {
-    aliquotaIR = 0, 225
+    aliquotaIR = 0.225
     parcelaIR = 636.13
-    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+    descontoIR = (aliquotaIR * salarioBase) - parcelaIR;
 } else {
-    aliquotaIR = 0, 275
+    aliquotaIR = 0.275
     parcelaIR = 869.36
-    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+    descontoIR = (aliquotaIR * salarioBase) - parcelaIR;
 }
 
+salarioLiquido = salarioBase - descontoIR;
 
 console.log()
-console.log(salarioLiquido.toFixed(2))
+console.log(`Salário líquido R$ ${salarioLiquido.toFixed(2)}`)
