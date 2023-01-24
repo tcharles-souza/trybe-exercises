@@ -42,3 +42,52 @@ if (purchaseValue < 0 || saleValue < 0){
 }
 console.log()
 console.log(`Lucro total R$ ${profit.toFixed(2)}`)
+
+// Utilize if/else para escrever um código que, dado um salário bruto, calcule o líquido a ser recebido.
+
+let salarioBruto = 3000;
+let aliquotaINSS;
+let salarioBase;
+let parcelaIR;
+let aliquotaIR;
+let salarioLiquido;
+
+if (salarioBruto < 1556.94) {
+    aliquotaINSS = 0.08;
+    salarioBase = salarioBruto * (1 - aliquotaINSS);
+} else if (salarioBruto < 2594.92) {
+    aliquotaINSS = 0.09;
+    salarioBase = salarioBruto * (1 - aliquotaINSS);
+} else if (salarioBruto < 5189.82) {
+    aliquotaINSS = 0.11;
+    salarioBase = salarioBruto * (1 - aliquotaINSS);
+} else {
+    aliquotaINSS = 570.88;
+    salarioBase = salarioBruto - aliquotaINSS;
+}
+
+// Cálculo do Imposto de Renda
+
+if (salarioBase < 1903, 99) {
+    salarioLiquido = salarioBase;
+} else if (salarioBase < 2826.66) {
+    aliquotaIR = 0, 075
+    parcelaIR = 142.80
+    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+} else if (salarioBase < 3751.06) {
+    aliquotaIR = 0, 15
+    parcelaIR = 345.80
+    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+} else if (salarioBase < 4664.69) {
+    aliquotaIR = 0, 225
+    parcelaIR = 636.13
+    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+} else {
+    aliquotaIR = 0, 275
+    parcelaIR = 869.36
+    salarioLiquido = (aliquotaIR * salarioBase) - parcelaIR;
+}
+
+
+console.log()
+console.log(salarioLiquido.toFixed(2))
