@@ -54,3 +54,67 @@ console.log('Exercício 5 ----------------------')
 console.log()
 
 console.log(`Maior número = ${maiorNumero}`)
+
+// Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem:
+// “nenhum valor ímpar encontrado”;
+
+let impares = 0;
+
+for(let i = 0; i < numbers.length; i++){
+    if((numbers[i]%2) != 0){
+        impares++
+    }
+}
+console.log()
+console.log('Exercício 6 ----------------------')
+console.log()
+
+if (impares > 0) {
+    console.log(`Quantidade de impares = ${impares}`)
+} else {
+    console.log('Nenhum valor ímpar encontrado.')
+}
+
+// Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+
+let menorNumero = numbers[0];
+
+for(let i = 0; i < numbers.length; i++){
+    if(numbers[i] < menorNumero){
+        menorNumero = numbers[i]
+    }
+}
+
+console.log()
+console.log('Exercício 7 ----------------------')
+console.log()
+
+console.log('Menor número:', menorNumero);
+
+// Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+
+let array = [];
+
+for(i = 1; i <= 25; i++){
+    array.push(i);
+}
+
+console.log()
+console.log('Exercício 8 ----------------------')
+console.log()
+
+console.log(array)
+
+//Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+
+let array2 = [];
+
+for (let i = 0; i < array.length; i++){
+    array2[i] = array[i]/2
+}
+
+console.log()
+console.log('Exercício 8 ----------------------')
+console.log()
+
+console.log(array2)
