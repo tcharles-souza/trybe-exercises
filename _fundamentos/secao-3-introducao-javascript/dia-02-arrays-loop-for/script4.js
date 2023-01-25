@@ -93,24 +93,24 @@ console.log('Menor número:', menorNumero);
 
 // Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
 
-let array = [];
+let numbers = [];
 
 for(i = 1; i <= 25; i++){
-    array.push(i);
+    numbers.push(i);
 }
 
 console.log()
 console.log('Exercício 8 ----------------------')
 console.log()
 
-console.log(array)
+console.log(numbers)
 
 //Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
 
 let array2 = [];
 
-for (let i = 0; i < array.length; i++){
-    array2[i] = array[i]/2
+for (let i = 0; i < numbers.length; i++){
+    array2[i] = numbers[i]/2
 }
 
 console.log()
