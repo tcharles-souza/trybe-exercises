@@ -93,7 +93,7 @@ console.log('Menor número:', menorNumero);
 
 // Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
 
-let numbers = [];
+numbers = [];
 
 for(i = 1; i <= 25; i++){
     numbers.push(i);
@@ -114,7 +114,7 @@ for (let i = 0; i < numbers.length; i++){
 }
 
 console.log()
-console.log('Exercício 8 ----------------------')
+console.log('Exercício 9 ----------------------')
 console.log()
 
 console.log(array2)
