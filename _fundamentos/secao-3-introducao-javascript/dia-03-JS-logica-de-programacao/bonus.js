@@ -51,20 +51,27 @@ console.log('Exercício III -------------------------------------------')
 console.log()
 
 // Agora inverta o triângulo:
-n = 5;
-let trianguloRetanguloInvertido = '';
+
+let trianguloInvertido = '';
+let decrescimo = 0;
 
 console.log('Triângulo invertido de base ', n)
 console.log()
 
+for (let i = 0; i < n; i++) {
 
-for (let i = 0; i < n; i++){
-    for (let j = 0; j < n; j++){
-        if(j != (n-1)){
-            trianguloRetanguloInvertido[i] = trianguloRetanguloInvertido[i] + ' ';
+    trianguloInvertido = ''
+    decrescimo++
+
+    for (let j = 0; j < n; j++) {
+        if (j < n - decrescimo) {
+            trianguloInvertido = trianguloInvertido + ' ';
         } else {
-            trianguloRetanguloInvertido[i] = trianguloRetanguloInvertido[i] + '*';
+            trianguloInvertido = trianguloInvertido + '*';
         }
     }
-    console.log(trianguloRetanguloInvertido)
+console.log(trianguloInvertido)
 }
+
+
+
