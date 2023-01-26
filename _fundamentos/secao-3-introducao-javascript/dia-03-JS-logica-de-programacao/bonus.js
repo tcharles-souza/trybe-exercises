@@ -19,6 +19,7 @@ for (let i = 0; i < n; i++) {
 }
 
 console.log('Quadrado de lado', n)
+console.log()
 
 // O contador irá contar de 0 até n-1 e irá imprimir na tela a variável quadrada n vezes:
 
@@ -27,6 +28,22 @@ let count = 0;
 while (count < n) {
     count++
     console.log(quadrado)
+}
+
+console.log()
+console.log('Exercício II -------------------------------------------')
+console.log()
+
+// Faça o mesmo que antes, mas que imprima um triângulo retângulo com n asteriscos de base
+
+let trianguloRetangulo = '';
+
+console.log('Triângulo de base ', n)
+console.log()
+
+for (let i = 0; i < n; i++){
+    trianguloRetangulo = trianguloRetangulo + '*';
+    console.log(trianguloRetangulo);
 }
 
 console.log()
