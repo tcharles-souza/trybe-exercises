@@ -10,12 +10,12 @@
 //"0 1 2 3 4"    -> seleciona 5 numeros   -1n -1n n +1n +1n ou seja, +2 n       i = 2   middle =  1234
 //               -> seleciona 7 numeros ...
 
-n = 97;
+n = 7;
 let triangulo = ''
 let middleNumber = Math.floor(n/2)
 let test = -1;
 
-for (let i = 0; i < n; i += 1){
+for (let j = 0; j < n; j += 1){
     test++
     triangulo = ''
 
