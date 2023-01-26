@@ -52,11 +52,19 @@ console.log()
 
 // Agora inverta o triângulo:
 
+//A idea é adicionar espaços vazios a uma variável até que, dada uma condição, serão adicionados asterísticos.
 let trianguloInvertido = '';
 let decrescimo = 0;
 
 console.log('Triângulo invertido de base ', n)
 console.log()
+
+//      O meu primeiro for zera a linha do espaços e asterísticos e incrementa a variável 'descrescimo' que será utilizada
+//no segundo for.
+
+//Explicação do segundo for: Enquanto j for menor que n, adiciona 'espaço vazio', do contrário adiciona '*'.
+//o descréscimo serve para que a cada linha seja adicionado um asterístico a mais'
+
 
 for (let i = 0; i < n; i++) {
 
