@@ -124,7 +124,7 @@ for (let i = 0; i < n; i += 1) {
 console.log(triangulo)
 
 for (let i = 0; i < middleNumber; i += 1) {
-
+    
     acrescimo++
     decrescimo--
 
@@ -139,3 +139,39 @@ for (let i = 0; i < middleNumber; i += 1) {
     console.log(triangulo)
 
 }
+
+console.log()
+console.log('Exercício V -------------------------------------------')
+console.log()
+console.log('Triangulo vazio no meio de base ',n)
+
+// Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
+
+// 0 1 2 '3' 4 5 6 
+// 0 1 '2' 3 '4' 5 6
+// 0 '1' 2 3 4 '5' 6 
+// '0 1 2 3 4 5 6'
+
+
+let cresceMid = middleNumber;
+let diminuiMid = middleNumber;
+triangulo = '';
+
+for (let i = 0; i < middleNumber; i += 1) {
+    for (let i = 0; i < n; i++) {
+        if (i == cresceMid || i == diminuiMid) {
+            triangulo = triangulo + '*'
+        } else {
+            triangulo = triangulo + ' '
+        }
+    }
+    cresceMid++
+    diminuiMid--
+    console.log(triangulo)
+    triangulo = '';
+}
+
+for (let i = 0; i < n; i++) {
+    triangulo = triangulo + '*';
+}
+console.log(triangulo)
