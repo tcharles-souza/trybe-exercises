@@ -102,15 +102,40 @@ console.log()
 //descrescimo
 
 
-n = 5;
-let triangulo = ''
-let middleNumber = Math.floor(n/2)
-let acrescimo = 0;
+if(n%2 == 0){
+    n = n +1;
+}
 
-for (let i = 0; i < n; i += 1){
-    if (i == middleNumber){
+console.log('Triângulo de base ',n)
+
+let triangulo = ''
+let middleNumber = Math.floor(n / 2)
+let acrescimo = middleNumber;
+decrescimo = middleNumber;
+
+for (let i = 0; i < n; i += 1) {
+    if (i == middleNumber) {
         triangulo = triangulo + '*'
     } else {
         triangulo = triangulo + ' '
     }
+}
+
+console.log(triangulo)
+
+for (let i = 0; i < middleNumber; i += 1) {
+
+    acrescimo++
+    decrescimo--
+
+    triangulo = triangulo.substring(0, acrescimo)
+        + '*'
+        + triangulo.substring(acrescimo + 1);
+
+    triangulo = triangulo.substring(0, decrescimo)
+        + '*'
+        + triangulo.substring(decrescimo + 1)
+
+    console.log(triangulo)
+
 }
