@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1 id="title">Formulário Trybe Travel</h1>
+  <form action="" id="main-form">
+
+    <section class="mb-3" id="nameForm">
+      <label for="fullName"> Digite seu nome completo:</label>
+      <input class="form-control" type="text" id="fullName" placeholder="Ronaldo Nazário de Lima" minlength="10" maxlength="40">
+    </section>
+
+    <section class="mb-3" id="emailForm">
+      <label for="email"> Digite seu e-mail:</label>
+      <input class="form-control" type="email" id="email" placeholder="brilhamuitonocurintcha@gmail.com" maxlength="50">
+    </section>
+
+    <section class="mb-3" id="destinationForm">Destino Preferido:
+      <input type="radio" id="destin-1" name="destinations">
+      <label for="destin-1">Cidade</label>
+      <input type="radio" id="destin-2" name="destinations">
+      <label for="destin-2">Campo</label>
+      <input type="radio" id="destin-3" name="destinations">
+      <label for="destin-3">Praia</label>
+      <input type="radio" id="destin-4" name="destinations">
+      <label for="destin-4">Montanha</label>
+    </section>
+
+    <section class="mb-3" id="textForm">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+      <br>
+      <textarea name="question" id="question" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
+    </section>
+
+    <section class="mb-3" id="dateTravelForm"> Qual a melhor data para realizar sua viagem?<br>
+      <input type="date" id="date">
+    </section>
+
+    <section class="mb-3" id="promoForm">
+      <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        <input type="checkbox" id="promo">
+      </label>
+    </section>
+
+    <section class="mb-3" id="agreeForm">
+      <label for="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        <input type="checkbox" id="agreement" required>
+      </label>
+    </section>
+
+    <section class="mb-3" id="btnsForm">
+      <button type="submit" id="submit-btn" class="btn btn-success">Enviar</button>
+      <button type="reset" id="clear-btn" class="btn btn-primary">Limpar</button>
+    </section>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
