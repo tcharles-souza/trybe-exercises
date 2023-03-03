@@ -61,15 +61,58 @@ const books = [
   },
 ];
 
-const findBirthYear = () => {
-  let obj;
+// const expectedResult = 'Stephen King';
+const authorBornIn1947 = () => {
+    let obj;
   books.find((element) => {
-    if (element.author.birthYear === 1890) {
-      obj = element;
+    if (element.author.birthYear === 1947) {
+      obj = element.author.name;
     };
   });
-  
+
   return obj;
+}
+
+console.log(authorBornIn1947());
+
+const smallerName = () => {
+  let nameBook;
+  let smallerLength = books[0].name.length;
+
+  books.forEach((element) => {
+    let nameLength = element.name.length;
+    if (nameLength < smallerLength) { 
+      smallerLength = nameLength;
+      nameBook = element.name;
+    };
+  });
+  return nameBook;
 };
 
-console.log(findBirthYear())
+console.log(smallerName());
+
+const getNamedBook = () => {
+  let name;
+  books.find(element => {
+    if (element.name.length === 26) {
+        name = element;
+    }
+  })
+  return name;
+};
+
+console.log(getNamedBook());
+
+function everyoneWasBornOnSecXX(element) {
+    const year = element.author.birthYear;
+    return  year >= 1901 && year <= 2000;
+};
+
+console.log(books.every(everyoneWasBornOnSecXX));
+
+const expectedResult = true;
+
+const someBookWasReleaseOnThe80s = (element) => {
+    const year = element.releaseYear;
+    return  year >= 1981 && year <= 1990;
+};
