@@ -116,3 +116,13 @@ const someBookWasReleaseOnThe80s = (element) => {
     const year = element.releaseYear;
     return  year >= 1981 && year <= 1990;
 };
+
+console.log(books.some(someBookWasReleaseOnThe80s));
+
+const arr = [];
+books.forEach(element => arr.push(element.author.birthYear));
+
+const authorUnique = (x) => arr.indexOf(x) === arr.lastIndexOf(x);
+
+console.log(arr.every(authorUnique));
+
