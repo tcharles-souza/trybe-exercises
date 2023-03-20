@@ -1,0 +1,1 @@
+const ramdomID = Math.floor((Math.random() * 732) + 1);
